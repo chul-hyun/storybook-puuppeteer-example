@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 
 import App from 'Components/App';
 
-import 'Styles/base.css';
-import 'Styles/index.css';
+import './common';
 
 const rootDOM = document.getElementById('root');
 
