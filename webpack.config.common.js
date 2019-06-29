@@ -57,5 +57,9 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
+    alias: {
+      Components: path.resolve(SRC_PATH, 'components/'),
+      Styles: path.resolve(SRC_PATH, 'styles/'),
+    },
   },
 };
