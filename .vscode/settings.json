@@ -1,0 +1,8 @@
+{
+  // eslint config
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact"
+  ]
+}
