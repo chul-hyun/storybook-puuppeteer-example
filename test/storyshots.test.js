@@ -5,6 +5,10 @@ const getScreenshotOptions = () => ({
   fullPage: true,
 });
 
+const getGotoOptions = () => ({
+  waitUntil: 'networkidle2',
+});
+
 // React renederer 테스트
 initStoryshots();
 
@@ -14,5 +18,6 @@ initStoryshots({
   test: imageSnapshot({
     storybookUrl: 'http://localhost:6006',
     getScreenshotOptions,
+    getGotoOptions,
   }),
 });
