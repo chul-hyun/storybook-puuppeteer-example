@@ -15,5 +15,5 @@ module.exports = mrege(babelConfig, {
       },
     ],
   ],
-  plugins: [['babel-plugin-webpack-alias', { config: webpackConfigPath }]],
+  plugins: ['require-context-hook', ['babel-plugin-webpack-alias', { config: webpackConfigPath }]],
 });
