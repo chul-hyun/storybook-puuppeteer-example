@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 
 import App from 'Components/App';
 
-import './common';
-
 const rootDOM = document.getElementById('root');
 
 if (rootDOM === null) {
