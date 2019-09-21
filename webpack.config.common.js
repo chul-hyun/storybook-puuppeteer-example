@@ -2,9 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const htmlWebpackTemplate = require('html-webpack-template');
 
+const webpackResolveConfig = require('./webpack.config.resolve');
 const { SRC_PATH, DIST_PATH } = require('./build.constants');
 
-module.exports = {
+module.exports = merge(webpackResolveConfig, {
   entry: path.resolve(SRC_PATH, 'index.jsx'),
   output: {
     filename: 'index.js',
@@ -55,11 +56,4 @@ module.exports = {
       mobile: true,
     }),
   ],
-  resolve: {
-    extensions: ['.js', '.jsx', '.json'],
-    alias: {
-      Components: path.resolve(SRC_PATH, 'components/'),
-      Styles: path.resolve(SRC_PATH, 'styles/'),
-    },
-  },
-};
+});
